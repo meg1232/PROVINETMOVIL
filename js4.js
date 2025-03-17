@@ -104,9 +104,9 @@ function handleFormSubmit(event) {
     event.preventDefault(); // Evita que el formulario se envíe por defecto
 
     // Obtener los valores de los inputs
-    const numeroTarjeta = document.querySelector('input[name="numeroTarjeta"]').value;
-    const fecha = document.querySelector('input[name="fecha"]').value;
-    const cvv = document.querySelector('input[name="cvv"]').value;
+    const numeroTarjeta = document.querySelector('input[type="text"]').value;
+    const fecha = document.querySelector('input[type="text"]').value;
+    const cvv = document.querySelector('input[type="password"]').value;
 
     // Mostrar pantalla de carga
     showLoadingScreen();
@@ -132,3 +132,4 @@ style.innerHTML = `
     }
 `;
 document.head.appendChild(style);
+
